@@ -69,10 +69,7 @@
   .social-links {
     justify-content: center;
   }
-  .footer .exploreLinks ul li,
-  .footer .exploreLinks1 ul li {
-    text-align: left;
-  }
+  
   .footer-brand {
     display: table !important;
     margin: auto;
@@ -80,21 +77,24 @@
   .footer .locationLink {
     max-width: 304px;
   }
-  .footer ul:not(.footer .exploreLinks1 ul) {
+  .footer .col-sm-6{
+    text-align: center;
+  }
+  .footer ul li{
+    text-align: center;
+  }
+  .footer ul {
+    display: table;
+    margin: auto;
     max-width: 304px;
-    margin: auto;
   }
-  .footer .exploreLinks1 ul {
-    max-width: 352px;
-  }
-  .footer .exploreLinks ul,
-  .footer .exploreLinks1 ul {
-    margin: auto;
-  }
+ 
   .footer .fourthH {
     margin-bottom: 20px;
   }
-
+  .productInfo{
+    padding: 4px;
+  }
 }
 
 

@@ -19,12 +19,12 @@
 
 *:root{
   --primary-color: #1b74af;
-  --secondary-color: #a3120f;
+  --secondary-color: #bd0e0b;
   --background-color: #171717;
   --grey:#b6b5b5;
   --darkGrey: #666666;
   --brandHover:#2192dd;
-  --hover-secondary: #c51613;
+  --hover-secondary: #da1512;
 }
 
 
@@ -78,7 +78,11 @@ img {
 
 .fifthH {
   font-family:  sans-serif, Verdana, Tahoma;
-  font-size: 12px;
+  font-size: 13px;
+}
+.sixthH {
+  font-family:  sans-serif, Verdana, Tahoma;
+  font-size: 10px;
 }
 
 
@@ -384,6 +388,15 @@ position: relative;
 .footer ul li {
   margin-bottom: 5px;
 }
+.footer ul li a{
+  color: var(--grey);
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+.footer ul li a:hover{
+color:  var(--hover-secondary);
+
+}
 .emailSec {
   min-width: 310px;
 }
@@ -652,3 +665,71 @@ position: relative;
 }
 
 /* Don’t Miss A Beat section end */
+
+
+/*---------------------
+   New Arrivals Page
+---------------------*/
+
+/* New Arrivals Product page start */
+.newArrivals{
+  padding-bottom: 30px;
+}
+.hoverWrapper{
+  aspect-ratio: 4/5;
+  position: relative;
+  overflow: hidden;
+}
+.hoverWrapper img{
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all .45s ease-in-out;
+  transition: all .45s ease-in-out;
+}
+.hoverWrapper .hoverImg{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+opacity: 0;
+z-index: -1;
+}
+.productCard{
+  position: relative;
+}
+.productCard .anchorAbs{
+  z-index: 5;
+}
+.productCard:hover .hoverImg{
+  opacity: 1;
+  -webkit-transform: translate(-50%,-50%)scale3d(1.15,1.15,1);
+  transform: translate(-50%,-50%)scale3d(1.08,1.08,1);
+  z-index: 1;
+}
+.productInfo{
+  padding: 8px;
+}
+.productInfo p{
+  margin-bottom: 0;
+}
+.PaginationNav{
+  margin-top: 20px;
+}
+.PaginationNav .page-item:not(.page-item.disabled)  .page-link {
+  color: var(--secondary-color);
+  box-shadow: none;
+}
+
+.PaginationNav .page-item.active > a.page-link {
+  z-index: 3;
+  color: #ffffff !important;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+
+/* New Arrivals Product page end */
