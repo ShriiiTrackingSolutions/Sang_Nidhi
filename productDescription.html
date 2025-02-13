@@ -778,26 +778,27 @@
           }
         });
 
-          // Remove spotlight class from cloned items
-  $("#productDetailGallery").on('initialized.owl.carousel changed.owl.carousel', function() {
-    $(this).find('.owl-item.cloned a.spotlight').removeClass('spotlight');
+// Remove spotlight class from cloned items
+$("#productDetailGallery").on('initialized.owl.carousel changed.owl.carousel', function() {
+  $(this).find('.owl-item.cloned a.spotlight').removeClass('spotlight');
+});
+
+// Ensure dot thumbnails work on all devices, including mobile
+$('#productDetailGallery').on('initialized.owl.carousel refreshed.owl.carousel', function(event) {
+  // Get non-cloned items to match the original order
+  var $originalItems = $(this).find('.owl-item:not(.cloned)');
+  
+  // Update each dot button with the corresponding thumbnail
+  $(this).find('.owl-dots button').each(function(index) {
+    var thumbSrc = $originalItems.eq(index).find('img').data('thumb');
+    if (thumbSrc) {
+      $(this).css({
+        'background': "url('" + thumbSrc + "') no-repeat center",
+        'background-size': 'cover'
+      });
+    }
   });
-      
-        // Once the carousel is initialized, set dot thumbnails using data-thumb.
-        $('#productDetailGallery').on('initialized.owl.carousel', function(event) {
-          // Get non-cloned items to match the original order.
-          var $originalItems = $(this).find('.owl-item:not(.cloned)');
-          $(this).find('.owl-dots button').each(function(index) {
-            // Retrieve the thumbnail URL from the corresponding image's data-thumb attribute.
-            var thumbSrc = $originalItems.eq(index).find('img').data('thumb');
-            if (thumbSrc) {
-              $(this).css({
-                'background': "url('" + thumbSrc + "') no-repeat center",
-                'background-size': 'cover'
-              });
-            }
-          });
-        });
+});
       
         // If the carousel is already initialized, trigger the event manually.
         if ($('#productDetailGallery').data('owl.carousel')) {
