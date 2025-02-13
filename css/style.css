@@ -787,6 +787,10 @@ gap: 8px 8px;
   background-size: cover;
 }
 
+#productDetailGallery .spotlight{
+  width: 100%;
+  aspect-ratio: 4 / 5;
+}
 
 /* Zoom lens styling */
 #lens {
