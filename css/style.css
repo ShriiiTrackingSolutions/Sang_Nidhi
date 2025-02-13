@@ -765,9 +765,28 @@ display: flex;
 flex-direction: column;
 gap: 8px 8px;
 }
+
 #productDetailGallery .owl-dot:not(#productDetailGallery .owl-dot.active){
   opacity: 0.8;
 }
+
+#productDetailGallery .owl-dots > button:nth-child(1){
+  background: url('../image/New_Arrivals/newArivalsProducts/newArivalsProducts1Thumb1.webp') no-repeat center;
+  background-size: cover;
+}
+#productDetailGallery .owl-dots > button:nth-child(2){
+  background: url('../image/New_Arrivals/newArivalsProducts/newArivalsProducts1Thumb2.webp') no-repeat center;
+  background-size: cover;
+}
+#productDetailGallery .owl-dots > button:nth-child(3){
+  background: url('../image/New_Arrivals/newArivalsProducts/newArivalsProducts1Thumb3.webp') no-repeat center;
+  background-size: cover;
+}
+#productDetailGallery .owl-dots > button:nth-child(4){
+  background: url('../image/New_Arrivals/newArivalsProducts/newArivalsProducts1Thumb4.webp') no-repeat center;
+  background-size: cover;
+}
+
 
 /* Zoom lens styling */
 #lens {
