@@ -437,7 +437,7 @@ color:  var(--hover-secondary);
   color: var(--brandHover);
 }
 .copyright b {
-  color: var(--hover-secondary);
+  color: #ffffff;
   transition: 0.3s ease-in-out;
 }
 .copyright b:hover {
