@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/image/Favicon.jpg" />
+    <title>Sang Nidhi Fashion Designing</title>
+    <meta name="description" content="Discover exquisite, high-quality fashion at Sang Nidhi. Explore our stunning collection of modern designs, crafted with premium fabrics and impeccable attention to detail. Elevate your style with elegance and sophistication." />
+    <meta name="keywords" content="fashion, designer clothing, modern fashion, high-quality clothes, luxury fashion, stylish outfits, premium fabrics, trendy wear, elegant dresses, boutique clothing, couture fashion, exclusive designs, fashion trends, women’s fashion, men’s fashion, handcrafted apparel, Sang Nidhi fashion" />
+
+    <link fetchpriority="high" rel="preload" href="/image/Sang_Nidhi_LOGO.png" as="image" type="image/png"/>
+    <link fetchpriority="high" rel="preload" href="/image/New_Arrivals/newArivalsProducts/newArivalsProducts1/newArivalsProducts1Thumb1.webp" as="image" type="image/webp"/>
+    <link fetchpriority="high" rel="preload" href="/image/New_Arrivals/newArivalsProducts/newArivalsProducts1/newArivalsProducts1Button1.webp" as="image" type="image/webp"/>
+    <link fetchpriority="high" rel="preload" href="/image/New_Arrivals/newArivalsProducts/newArivalsProducts1/newArivalsProducts1Button2.webp" as="image" type="image/webp"/>
+    <link fetchpriority="high" rel="preload" href="/image/New_Arrivals/newArivalsProducts/newArivalsProducts1/newArivalsProducts1Button3.webp" as="image" type="image/webp"/>
+    <link fetchpriority="high" rel="preload" href="/image/New_Arrivals/newArivalsProducts/newArivalsProducts1/newArivalsProducts1Button4.webp" as="image" type="image/webp"/>
+
+
+    <!-- Preload -->
+
+    <link rel="preload" as="style"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+
+    <link rel="preload" as="style" href="/css/responsive.css" />
+    <link  rel="preload"  as="style" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+
+    <link rel="preconnect" href="https://kit.fontawesome.com" />
+    <link rel="dns-prefetch" href="https://kit.fontawesome.com" />
+
+    <script src="https://kit.fontawesome.com/52ca9e0df4.js" crossorigin="anonymous" ></script>
+  </head>
+
+  <body class="spotlightGalleryCustom">
+    <!-- header start -->
+
+    <header>
+      <div class="wrapheder">
+        <div id="header">
+        
+        </div>
+      </div>
+    </header>
+
+    <!-- header start -->
+
+    <!-- New Arrivals Product page start  -->
+    <section id="headBelowContent" class="newArrivalsDetail defaultPadding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- Owl Carousel with Zoom and Dynamic Dot Thumbnails via data-thumb -->
+            <div id="gallery" class="gallerySlideWrapper ">
+              <div id="productDetailGallery" class="owl-carousel owl-theme">
+                <div class="item">
+                  <a class="spotlight" href="">
+                    <div class="productSlideThumbSkeleton"></div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a class="spotlight" href="">
+                    <div class="productSlideThumbSkeleton"></div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a class="spotlight" href="">
+                    <div class="productSlideThumbSkeleton"></div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a class="spotlight" href="">
+                    <div class="productSlideThumbSkeleton"></div>
+                  </a>
+                </div>
+                <!-- Add more items as needed -->
+              </div>
+            </div>
+            <!-- Zoom lens and zoom result container -->
+            <div id="lens"></div>
+            <div id="result"></div>
+          </div>
+          <div class="col-lg-6 productDetailInfo">
+            <span class="sixthH tag dullGrey"></span>
+            <h2 class="secH mb-3" id="product-title"></h2>
+            <p class="PriceTag mt-1" id="product-price">
+              <strong>Rs.&nbsp;</strong>
+            </p>
+
+             <!-- Modal Launcher for Mobile -->
+ <button type="button" class="btn Mybtn d-table d-md-none" data-bs-toggle="modal" data-bs-target="#whatsappButton"> 
+  <span>Enquiry Now</span> <!---->
+ </button>
+   <!-- Submit Button for Desktop --> 
+   <div class="col-12 d-none d-md-table">
+    <button id="desktopBtn" class="Mybtn" type="submit"><span>Enquiry Now</span></button>
+  </div>
+            <div id="product-conten">
+
+            </div>
+            <p class="dullGrey" id="product-conten"></p>
+            
+
+
+
+ 
+ <!-- WhatsApp Modal -->
+ <div class="modal fade" id="whatsappButton" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text" id="exampleModalLabel">Select WhatsApp Type</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <div class="options">
+          <button id="whatsappStandard" class="btn option">
+            <img src="image/whatsapp-icon.png" alt="WhatsApp" />        
+          </button>
+          <button id="whatsappBusiness" class="btn option">
+            <img src="image/whatsapp-business-icon.png" alt="WhatsApp Business" />        
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+ 
+ 
+  
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- New Arrivals Product page end -->
+
+
+    <!-- You may also like section start -->
+     <section class="youMayAlsoLike defaultPadding ">
+<div class="container">
+  <h2 class="therdH">You may also like</h2>
+  <div class="row g-2 gy-3">
+    <div class="col-lg-3 col-6">
+        <div class="productCard">
+            <a class="anchorAbs" href="newArrivalsPages/newArivalsProductDescriptionPage/productDescription.html"></a>
+            <div class="hoverWrapper">
+                <img loading="lazy" class="mainImg" src="image/New_Arrivals/new_Arrival_Main1.webp" alt="Pink Organza Hand &amp; Machine Embellished Lehenga Set">
+                <img loading="lazy" class="hoverImg" src="image/New_Arrivals/new_Arrival_Hover1.webp" alt="Pink Organza Hand &amp; Machine Embellished Lehenga Set">
+            </div>
+            <div class="productInfo">
+              <h3 class="fifthH mb-0">Pink Organza Hand &amp; Machine Embellished Lehenga Set</h3>
+              <span class="sixthH tag">New Arrivals</span>
+              <p class="PriceTag mt-1"><span>From</span> <strong>Rs.&nbsp;110,000.00</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-6">
+        <div class="productCard">
+            <a class="anchorAbs" href=""></a>
+            <div class="hoverWrapper">
+                <img loading="lazy" class="mainImg" src="image/New_Arrivals/new_Arrival_Main2.webp" alt=" Malishika Sharara Set">
+                <img loading="lazy" class="hoverImg" src="image/New_Arrivals/new_Arrival_Hover2.webp" alt=" Malishika Sharara Set">
+            </div>
+            <div class="productInfo">
+              <h3 class="fifthH mb-0"> Malishika Sharara Set</h3>
+              <span class="sixthH tag">New Arrivals</span>
+              <p class="PriceTag mt-1"><span>From</span> <strong>Rs.&nbsp;48,500.00</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-6">
+        <div class="productCard">
+            <a class="anchorAbs" href=""></a>
+            <div class="hoverWrapper">
+                <img loading="lazy" class="mainImg" src="image/New_Arrivals/new_Arrival_Main3.webp" alt="Jaanvi Sharara set">
+                <img loading="lazy" class="hoverImg" src="image/New_Arrivals/new_Arrival_Hover3.webp" alt="Jaanvi Sharara set">
+            </div>
+            <div class="productInfo">
+              <h3 class="fifthH mb-0">Jaanvi Sharara set</h3>
+              <span class="sixthH tag">New Arrivals</span>
+              <p class="PriceTag mt-1"><span>From</span> <strong>Rs.&nbsp;46,500.00</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-6">
+        <div class="productCard">
+            <a class="anchorAbs" href=""></a>
+            <div class="hoverWrapper">
+                <img loading="lazy" class="mainImg" src="image/New_Arrivals/new_Arrival_Main4.webp" alt="Pink Tussar Pant Set">
+                <img loading="lazy" class="hoverImg" src="image/New_Arrivals/new_Arrival_Hover4.webp" alt="Pink Tussar Pant Set">
+            </div>
+            <div class="productInfo">
+              <h3 class="fifthH mb-0">Pink Tussar Pant Set</h3>
+              <span class="sixthH tag">New Arrivals</span>
+              <p class="PriceTag mt-1"><span>From</span> <strong>Rs.&nbsp;52,500.00</strong></p>
+            </div>
+        </div>
+    </div>
+   
+   
+</div>
+</div>
+     </section>
+    <!-- You may also like section end -->
+    
+    <!-- Featured collection section start -->
+     <section class="featuredCollection defaultPadding pb-4">
+<div class="container">
+  <h2 class="therdH">Featured collection</h2>
+  <div class="row g-2 gy-3">
+    <div class="col-lg-3 col-6">
+        <div class="productCard">
+            <a class="anchorAbs" href="newArrivalsPages/newArivalsProductDescriptionPage/productDescription.html"></a>
+            <div class="hoverWrapper">
+                <img loading="lazy" class="mainImg" src="image/New_Arrivals/new_Arrival_Main1.webp" alt="Pink Organza Hand &amp; Machine Embellished Lehenga Set">
+                <img loading="lazy" class="hoverImg" src="image/New_Arrivals/new_Arrival_Hover1.webp" alt="Pink Organza Hand &amp; Machine Embellished Lehenga Set">
+            </div>
+            <div class="productInfo">
+              <h3 class="fifthH mb-0">Pink Organza Hand &amp; Machine Embellished Lehenga Set</h3>
+              <span class="sixthH tag">New Arrivals</span>
+              <p class="PriceTag mt-1"><span>From</span> <strong>Rs.&nbsp;110,000.00</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-6">
+        <div class="productCard">
+            <a class="anchorAbs" href=""></a>
+            <div class="hoverWrapper">
+                <img loading="lazy" class="mainImg" src="image/New_Arrivals/new_Arrival_Main2.webp" alt=" Malishika Sharara Set">
+                <img loading="lazy" class="hoverImg" src="image/New_Arrivals/new_Arrival_Hover2.webp" alt=" Malishika Sharara Set">
+            </div>
+            <div class="productInfo">
+              <h3 class="fifthH mb-0"> Malishika Sharara Set</h3>
+              <span class="sixthH tag">New Arrivals</span>
+              <p class="PriceTag mt-1"><span>From</span> <strong>Rs.&nbsp;48,500.00</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-6">
+        <div class="productCard">
+            <a class="anchorAbs" href=""></a>
+            <div class="hoverWrapper">
+                <img loading="lazy" class="mainImg" src="image/New_Arrivals/new_Arrival_Main3.webp" alt="Jaanvi Sharara set">
+                <img loading="lazy" class="hoverImg" src="image/New_Arrivals/new_Arrival_Hover3.webp" alt="Jaanvi Sharara set">
+            </div>
+            <div class="productInfo">
+              <h3 class="fifthH mb-0">Jaanvi Sharara set</h3>
+              <span class="sixthH tag">New Arrivals</span>
+              <p class="PriceTag mt-1"><span>From</span> <strong>Rs.&nbsp;46,500.00</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-6">
+        <div class="productCard">
+            <a class="anchorAbs" href=""></a>
+            <div class="hoverWrapper">
+                <img loading="lazy" class="mainImg" src="image/New_Arrivals/new_Arrival_Main4.webp" alt="Pink Tussar Pant Set">
+                <img loading="lazy" class="hoverImg" src="image/New_Arrivals/new_Arrival_Hover4.webp" alt="Pink Tussar Pant Set">
+            </div>
+            <div class="productInfo">
+              <h3 class="fifthH mb-0">Pink Tussar Pant Set</h3>
+              <span class="sixthH tag">New Arrivals</span>
+              <p class="PriceTag mt-1"><span>From</span> <strong>Rs.&nbsp;52,500.00</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-6">
+        <div class="productCard">
+            <a class="anchorAbs" href=""></a>
+            <div class="hoverWrapper">
+                <img loading="lazy" class="mainImg" src="image/New_Arrivals/new_Arrival_Main5.webp" alt="Pink Tussar Floral Print Pant Set">
+                <img loading="lazy" class="hoverImg" src="image/New_Arrivals/new_Arrival_Hover5.webp" alt="Pink Tussar Floral Print Pant Set">
+            </div>
+            <div class="productInfo">
+              <h3 class="fifthH mb-0">Pink Tussar Floral Print Pant Set</h3>
+              <span class="sixthH tag">New Arrivals</span>
+              <p class="PriceTag mt-1"><span>From</span> <strong>Rs.&nbsp;32,500.00</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-6">
+        <div class="productCard">
+            <a class="anchorAbs" href=""></a>
+            <div class="hoverWrapper">
+                <img loading="lazy" class="mainImg" src="image/New_Arrivals/new_Arrival_Main6.webp" alt="Pink Chiffon Hand &amp; Machine Embroidered Saree Set">
+                <img loading="lazy" class="hoverImg" src="image/New_Arrivals/new_Arrival_Hover6.webp" alt="Pink Chiffon Hand &amp; Machine Embroidered Saree Set">
+            </div>
+            <div class="productInfo">
+              <h3 class="fifthH mb-0"> Pink Chiffon Hand &amp; Machine Embroidered Saree Set</h3>
+              <span class="sixthH tag">New Arrivals</span>
+              <p class="PriceTag mt-1"><span>From</span> <strong>Rs.&nbsp;68,500.00</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-6">
+        <div class="productCard">
+            <a class="anchorAbs" href=""></a>
+            <div class="hoverWrapper">
+                <img loading="lazy" class="mainImg" src="image/New_Arrivals/new_Arrival_Main7.webp" alt="Blue Tussar Pant Set">
+                <img loading="lazy" class="hoverImg" src="image/New_Arrivals/new_Arrival_Hover7.webp" alt="Blue Tussar Pant Set">
+            </div>
+            <div class="productInfo">
+              <h3 class="fifthH mb-0">Blue Tussar Pant Set</h3>
+              <span class="sixthH tag">New Arrivals</span>
+              <p class="PriceTag mt-1"><span>From</span> <strong>Rs.&nbsp;32,500.00</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-6">
+        <div class="productCard">
+            <a class="anchorAbs" href=""></a>
+            <div class="hoverWrapper">
+                <img loading="lazy" class="mainImg" src="image/New_Arrivals/new_Arrival_Main8.webp" alt="Yellow Tussar Hand &amp; Machine Embroidered Flared Kurta Set">
+                <img loading="lazy" class="hoverImg" src="image/New_Arrivals/new_Arrival_Hover8.webp" alt="Yellow Tussar Hand &amp; Machine Embroidered Flared Kurta Set">
+            </div>
+            <div class="productInfo">
+              <h3 class="fifthH mb-0">Yellow Tussar Hand &amp; Machine Embroidered Flared Kurta Set</h3>
+              <span class="sixthH tag">New Arrivals</span>
+              <p class="PriceTag mt-1"><span>From</span> <strong>Rs.&nbsp;28,500.00</strong></p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>
+     </section>
+    <!-- Featured collection section end -->
+
+
+
+
+    <!-- whatsapp FAB icon -->
+    <div class="fab-container">
+      <a
+        class="set-url-target"
+        rel="noopener"
+        data-mobile-target=""
+        data-desktop-target="_blank"
+        target="_blank"
+        href="#"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="59.54px"
+          height="60px"
+          viewBox="0 0 256 258"
+        >
+          <defs>
+            <linearGradient
+              id="logosWhatsappIcon0"
+              x1="50%"
+              x2="50%"
+              y1="100%"
+              y2="0%"
+            >
+              <stop offset="0%" stop-color="#1faf38" />
+              <stop offset="100%" stop-color="#60d669" />
+            </linearGradient>
+            <linearGradient
+              id="logosWhatsappIcon1"
+              x1="50%"
+              x2="50%"
+              y1="100%"
+              y2="0%"
+            >
+              <stop offset="0%" stop-color="#f9f9f9" />
+              <stop offset="100%" stop-color="#fff" />
+            </linearGradient>
+          </defs>
+          <path
+            fill="url(#logosWhatsappIcon0)"
+            d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a123 123 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004"
+          />
+          <path
+            fill="url(#logosWhatsappIcon1)"
+            d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416m40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513z"
+          />
+          <path
+            fill="#fff"
+            d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561s11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716s-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Call FAB icon -->
+    <div class="Call-fab-container">
+      <a rel="noopener" target="_blank" href="tel:+91 79909 09711">
+        <img
+          style="height: 60px; width: 60px"
+          src="image/phone-call.png"
+          alt="phone icon"
+        />
+      </a>
+    </div>
+
+    <!-- footer section start  -->
+    <footer id="footer" class="footer">
+
+    </footer>
+
+    <!-- footer section end  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/include.js"></script>
+    <script src="/js/header-behavior.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    loadContent(() => {
+      runHeaderScripts(); // Only after both header and footer are loaded
+    });
+  });
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="/js/spotlight.bundle.js"></script>
+
+   
+      
+      <script>
+        $(document).ready(function() {
+    // Initialize Owl Carousel with dots enabled.
+    var $owl = $("#productDetailGallery").owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: true,
+        items: 1,
+        responsive: {
+            0: { items: 1 },
+            600: { items: 1 },
+            1000: { items: 1 }
+        }
+    });
+
+    // Remove spotlight class from cloned items
+    $("#productDetailGallery").on('initialized.owl.carousel changed.owl.carousel', function() {
+        $(this).find('.owl-item.cloned a.spotlight').removeClass('spotlight');
+    });
+
+    // Ensure dot thumbnails work on all devices, including mobile
+    $('#productDetailGallery').on('initialized.owl.carousel refreshed.owl.carousel', function(event) {
+        var $originalItems = $(this).find('.owl-item:not(.cloned)');
+
+        $(this).find('.owl-dots button').each(function(index) {
+            var thumbSrc = $originalItems.eq(index).find('img').data('thumb');
+            if (thumbSrc) {
+                $(this).css({
+                    'background': "url('" + thumbSrc + "') no-repeat center",
+                    'background-size': 'cover'
+                });
+            }
+        });
+    });
+
+    // If the carousel is already initialized, trigger the event manually.
+    if ($('#productDetailGallery').data('owl.carousel')) {
+        $('#productDetailGallery').trigger('initialized.owl.carousel');
+    }
+
+    // Zoom effect for the active Owl Carousel image.
+    $(document).mousemove(function(e) {
+        var $activeItem = $('#productDetailGallery .owl-item.active .spotlight');
+        if (!$activeItem.length) return;
+
+        var $img = $activeItem.find('img');
+        var highResImage = $activeItem.attr('href'); // Get high-resolution image from <a> href
+
+        var imgOffset = $img.offset(),
+            imgWidth = $img.outerWidth(),
+            imgHeight = $img.outerHeight(),
+            mouseX = e.pageX,
+            mouseY = e.pageY;
+
+        if (mouseX > imgOffset.left && mouseX < imgOffset.left + imgWidth &&
+            mouseY > imgOffset.top && mouseY < imgOffset.top + imgHeight) {
+            $('#lens, #result').show();
+            imageZoom($img, $('#result'), $('#lens'), e, highResImage);
+        } else {
+            $('#lens, #result').hide();
+        }
+    });
+
+    // Function to handle the zoom effect.
+    function imageZoom(img, result, lens, e, highResImage) {
+        var imgOffset = img.offset();
+        var lensWidth = img.width() / 2,
+            lensHeight = img.height() / 2;
+
+        lens.width(lensWidth);
+        lens.height(lensHeight);
+
+        result.width(img.width());
+        result.height(img.height());
+        result.offset({
+            top: imgOffset.top,
+            left: imgOffset.left + img.outerWidth() + 10
+        });
+
+        var cx = img.width() / lensWidth,
+            cy = img.height() / lensHeight;
+
+        // Use high-resolution image from <a> href instead of <img> src
+        result.css({
+            'background-image': 'url(' + highResImage + ')',
+            'background-size': (img.width() * cx) + 'px ' + (img.height() * cy) + 'px'
+        });
+
+        var posX = e.pageX - lensWidth / 2,
+            posY = e.pageY - lensHeight / 2;
+
+        if (posX < imgOffset.left) posX = imgOffset.left;
+        if (posY < imgOffset.top) posY = imgOffset.top;
+        if (posX > imgOffset.left + img.width() - lensWidth) {
+            posX = imgOffset.left + img.width() - lensWidth;
+        }
+        if (posY > imgOffset.top + img.height() - lensHeight) {
+            posY = imgOffset.top + img.height() - lensHeight;
+        }
+
+        lens.offset({ left: posX, top: posY });
+
+        var bgPosX = - (posX - imgOffset.left) * cx;
+        var bgPosY = - (posY - imgOffset.top) * cy;
+        result.css('background-position', bgPosX + 'px ' + bgPosY + 'px');
+    }
+});
+
+      </script>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get("id");
+
+    if (!productId) return console.error("No product ID found in URL");
+
+    const galleryWrapper = document.getElementById("productDetailGallery");
+
+    // Step 1: Show skeletons initially
+    galleryWrapper.innerHTML = '';
+    for (let i = 0; i < 4; i++) {
+      galleryWrapper.innerHTML += `
+        <div class="item">
+          <a class="spotlight" href="#">
+            <div class="productSlideThumbSkeleton"></div>
+          </a>
+        </div>`;
+    }
+
+    // Step 2: Fetch product data
+    fetch(`https://shopp.organicsmahi.com/wp-json/wp/v2/product/${productId}`)
+      .then((response) => response.json())
+      .then((product) => {
+        if (!product || product.code === "rest_post_invalid_id") {
+          console.error("Product not found for ID:", productId);
+          return;
+        }
+
+        // Step 3: Insert product details
+        const title = product.acf?.product_title || "No Title";
+        const price = product.acf?.product_price || "N/A";
+        const description = product.acf?.product_description || "";
+
+        document.querySelector(".secH.mb-3").innerText = title;
+        document.querySelector("#product-price strong").innerText = `Rs. ${price}`;
+        document.getElementById("product-conten").innerHTML = description;
+
+        // Set category
+        const slug = product.class_list?.find(cls => cls.includes("product_category-")) || "";
+        const readableCategory = slug.replace("product_category-", "").split("-").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+        const categoryEl = document.querySelector(".sixthH.tag.dullGrey");
+        if (categoryEl) categoryEl.innerText = readableCategory;
+
+        // Step 4: Extract images
+        const imageFields = Object.keys(product.acf || {}).filter(key => key.startsWith("image_"));
+        const images = imageFields.map(key => product.acf[key]).filter(Boolean);
+
+        galleryWrapper.innerHTML = ""; // Clear skeletons
+
+        images.forEach((imgUrl) => {
+          const item = document.createElement("div");
+          item.className = "item";
+          item.innerHTML = `
+            <a class="spotlight" href="${imgUrl}">
+              <img src="${imgUrl}" data-thumb="${imgUrl}" alt="Product Image" loading="lazy">
+            </a>`;
+          galleryWrapper.appendChild(item);
+        });
+
+        const $gallery = $("#productDetailGallery");
+
+        // Step 5: Destroy old Owl Carousel if exists
+        if ($gallery.hasClass("owl-loaded")) {
+          $gallery.trigger("destroy.owl.carousel");
+          $gallery.removeClass("owl-loaded");
+          $gallery.find(".owl-stage-outer").children().unwrap();
+        }
+
+        // Step 6: Initialize Owl Carousel after slight delay to ensure DOM is ready
+        setTimeout(() => {
+          $gallery.owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: true,
+            items: 1
+          });
+
+          // Remove spotlight from cloned items
+          $gallery.on("initialized.owl.carousel changed.owl.carousel", function () {
+            $gallery.find(".owl-item.cloned a.spotlight").removeClass("spotlight");
+          });
+
+          // Apply image thumbnails to dots
+          $gallery.on('initialized.owl.carousel refreshed.owl.carousel', function () {
+  const $items = $gallery.find('.owl-item:not(.cloned)');
+  $gallery.find('.owl-dot').each(function (index) {
+    const thumb = $items.eq(index).find("img").data("thumb");
+    if (thumb) {
+      $(this).css({
+        background: `url('${thumb}') no-repeat center`,
+        "background-size": "cover"
+      });
+    }
+  });
+});
+
+// Force trigger on first load
+if ($gallery.data("owl.carousel")) {
+  $gallery.trigger("initialized.owl.carousel");
+}
+
+        }, 150); // Delay allows images to be fully inserted before Owl initializes
+      })
+      .catch((err) => {
+        console.error("Error fetching product:", err);
+      });
+  });
+</script>
+
+
+<script defer>
+  $(document).ready(function () {
+    // Debounce function to limit resize frequency
+    function debounce(func, wait) {
+      let timeout;
+      return function (...args) {
+        const context = this;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(context, args), wait);
+      };
+    }
+
+    // Construct WhatsApp Message
+    function constructWhatsAppMessage() {
+      const productName = $(".secH.mb-3").text();
+      const productCategory = $(".sixthH.tag.dullGrey").text();
+      const productPrice = $("#product-price strong").text();
+
+      return `Hello, I want to buy - \n\nProduct Name: ${productName}\nProduct Category: ${productCategory}\nPrice: ${
+        productPrice || "Not provided"
+      }`;
+    }
+
+    // Initialize logic based on screen size
+    function initializeLogic() {
+      const isMobile = $(window).width() <= 767.98;
+      const phoneNumber = "916354710794";
+      const standardWhatsAppUrl = `intent://send?phone=${phoneNumber}&text=`;
+      const businessWhatsAppUrl = `intent://send?phone=${phoneNumber}&text=`;
+    
+
+      if (isMobile) {
+        console.log("Initializing Mobile Logic");
+
+        // Handle WhatsApp Standard Button Click
+        $("#whatsappStandard").off("click").on("click", function () {
+          const message = constructWhatsAppMessage();
+          const encodedMessage = encodeURIComponent(message);
+
+          const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      // Check if Android device
+      if (/android/i.test(userAgent)) {
+        // Redirect to WhatsApp app
+        window.location.href = `${standardWhatsAppUrl}${encodedMessage}#Intent;scheme=whatsapp;package=com.whatsapp;end`;
+      } else {
+        // Fallback for web WhatsApp
+        window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+      }
+
+        });
+
+        // Handle WhatsApp Business Button Click
+        $("#whatsappBusiness").off("click").on("click", function () {
+          const message = constructWhatsAppMessage();
+          const encodedMessage = encodeURIComponent(message);
+
+          const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      // Check if Android device
+      if (/android/i.test(userAgent)) {
+        // Redirect to WhatsApp app
+        window.location.href = `${businessWhatsAppUrl}${encodedMessage}#Intent;scheme=whatsapp;package=com.whatsapp.w4b;end`;
+      } else {
+        // Fallback for web WhatsApp
+        window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+      }
+         
+        });
+
+      } else {
+        console.log("Initializing Desktop Logic");
+
+        // Handle Desktop "Buy Now" Button Click
+        $("#desktopBtn").off("click").on("click", function () {
+          const message = constructWhatsAppMessage();
+          const encodedMessage = encodeURIComponent(message);
+
+          // Use WhatsApp Web URL for desktop
+          const whatsappWebUrl = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+          window.open(whatsappWebUrl, "_blank");
+        });
+      }
+    }
+
+    // Initialize logic on page load
+    initializeLogic();
+
+    // Reinitialize logic on window resize with debounce
+    $(window).on(
+      "resize",
+      debounce(function () {
+        initializeLogic();
+      }, 200)
+    );
+  });
+</script>
+
+
+
+      
+    <script defer src="/js/script.js"></script>
+  </body>
+</html>
