@@ -14,13 +14,13 @@
   };
 
   // Load header first, then run logic
-  fetchFragment('header', '/header.html').then(success => {
+  fetchFragment('header', 'header.html').then(success => {
     if (success) {
       runHeaderScripts(); // Run only after header is injected
     }
   });
 
-  fetchFragment('footer', '/footer.html');
+  fetchFragment('footer', 'footer.html');
 })();
 
 // --- Sticky Header + Active Link Highlighting ---
@@ -72,26 +72,26 @@ function runHeaderScripts() {
     }
   }
 
- // Active link highlight for absolute paths
-function highlightActiveLink() {
-  let currentPath = window.location.pathname.split('?')[0];
-
-  document.querySelectorAll('.nav-link, .dropdown-item').forEach(link => {
-    const href = link.getAttribute('href')?.split('?')[0];
-    if (!href || href === '#') return;
-
-    if (href === currentPath) {
-      link.classList.add('active');
-
-      const parentDropdown = link.closest('.dropdown');
-      const toggleLink = parentDropdown?.querySelector('.nav-link.dropdown-toggle');
-      toggleLink?.classList.add('active');
-    } else {
-      link.classList.remove('active');
-    }
-  });
-}
-
+  function highlightActiveLink() {
+    // Get the current filename only (e.g., 'kurti.html')
+    const currentPage = window.location.pathname.split('/').pop().split('?')[0];
+  
+    document.querySelectorAll('.nav-link, .dropdown-item').forEach(link => {
+      const href = link.getAttribute('href')?.split('?')[0];
+      if (!href || href === '#') return;
+  
+      if (href === currentPage) {
+        link.classList.add('active');
+  
+        const parentDropdown = link.closest('.dropdown');
+        const toggleLink = parentDropdown?.querySelector('.nav-link.dropdown-toggle');
+        toggleLink?.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
+  
   // Attach debounced listeners
   const debouncedScroll = debounce(handleScroll, 0);
   const debouncedResize = debounce(applyNavbarStyles, 0);

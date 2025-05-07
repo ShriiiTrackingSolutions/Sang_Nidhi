@@ -21,6 +21,6 @@ function loadContent(callback) {
       });
   };
 
-  loadFragment('/header.html', '#header');
-  loadFragment('/footer.html', '#footer');
+  loadFragment('header.html', '#header');
+  loadFragment('footer.html', '#footer');
 }
